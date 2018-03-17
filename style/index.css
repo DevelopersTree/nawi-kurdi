@@ -1,0 +1,308 @@
+/*39414a dark blue*/
+/*Fonts*/
+@charset "utf-8";
+@font-face{
+font-family:"UbuntuKurdish0-81met";
+font-family:"Ubuntu Kurdish";
+src:
+url("UbuntuKurdish0-81met.ttf") format("truetype");font-weight:normal;font-style:normal;}
+
+@font-face{
+font-family:"UniQAIDAR_Aramco";
+font-family:"UniQAIDAR_Aramco";
+src:
+url("UniQAIDAR_Aramco.ttf") format("truetype");font-weight:normal;font-style:normal;}
+
+@font-face{
+font-family:"UniQAIDAR_DARA";
+font-family:"UniQAIDAR_DARA";
+src:
+url("UniQAIDAR_DARA.ttf") format("truetype");font-weight:normal;font-style:normal;}
+/**/
+body{
+	/*overflow-x: hidden;*/
+}
+/*fcc9b9*/
+.navbar  {
+	background: #383838;
+	min-height: 80px;
+	/*padding-left: 0px;*/
+}
+.navbar-toggler{
+    padding: 20px;
+    font-size: 25px;
+    color: #efefef;
+}
+.nav-item {
+	font-family: "UniQAIDAR_Aramco";
+	color:#efefef;
+	/*margin-right: 100px;*/
+	font-size: 20px;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.nav-item .nav-link i ,.nav-link {
+	color:#efefef;
+}
+.nav-item:hover  .nav-link i , .nav-item:hover  a{
+	/*color:#383838;*/
+    color: white;
+}
+.navbar .navbar-brand{
+    /* background: #ecf0f1; */
+    height: 75px;
+    /* position: absolute; */
+    /* margin-left: 0px; */
+    /* top: 0; */
+    width: 200px;
+    /* background: url(../img/gradiant.png); */
+    background-size: contain;
+    z-index: 100;
+}
+.devtree-logo{
+    width: 145px;
+    padding: 40px;
+    padding-top: 6px;
+    margin: 0;
+    float: left;
+}
+.gigant-logo{
+    width: 160px;
+    padding: 40px;
+    /* padding-top: 6px; */
+    /* float: right; */
+    margin-left: -75px;
+    /* padding-top: 10px; */
+    padding-bottom: -19px;
+    /* margin-bottom: -20px; */
+}
+.heroArea{
+	/*min-height: 400px;*/
+	background: #efefef;
+}
+.info-area{
+	text-align: center;
+	font-family: "UniQAIDAR_Aramco";
+	color:white;
+	margin-bottom: -20px;
+
+	
+}
+.info-area h1{
+	/*line-height: 7;*/
+    color:#575757;
+	margin-top: 6%;
+}
+.info-area h3{
+	text-align: center;
+    width: 100%;
+    color:#383838;
+    font-family: "Ubuntu Kurdish";
+    font-size: 16px;
+}
+.info-area span{
+	color:#383838;
+    font-size: 35px;
+    font-family: sans-serif !important;
+}
+.search-area{
+	text-align: center;
+	direction: rtl;
+	margin-top: 30px;
+    margin-bottom: 5%;
+}
+#search-box{
+    border: none;
+    height: 40px;
+    width: 35%;
+    font-size: 17px;
+    padding: 10px;
+    font-family: "Ubuntu Kurdish";
+    outline: none;
+    margin-left: 19px;
+    background: #4b545f;
+    color: white;
+    border-radius:100px;
+    margin-right: 3%;
+}
+#search-btn{
+	height: 40px;
+    border: none;
+    padding: 9px;
+    width: 50px;
+    background: #383838;
+    margin-right: -5px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 100px;
+}
+#search-btn:hover{
+	background: #39414a;
+}
+.bodyArea{
+	min-height: 600px;
+	width: 100%;
+	background: #ececec;
+	/*position: absolute;*/
+
+
+}
+.item{
+	/*background: red;*/
+	cursor: pointer;
+	padding: 2%;
+    background: white;
+	
+}
+.item:hover .person-detail{
+	background: #383838;
+
+}
+.item:hover .card-text{
+    color: #efefef;
+
+}
+.item .card-footer{
+    color:#383838;
+    
+}
+.item:hover .card-footer{
+    color:#efefef;
+    border-top:1px solid #efefef;
+}
+.item:hover .person-detail p{
+	color: white;
+	
+}
+.item .person-detail{
+	width: 300px;
+	height: 300px;
+	background: white;
+	margin: 0 auto;
+    border-radius: 5px;
+    padding-top: 20px;
+}
+
+.item .person-detail p{
+	text-align: center;
+	font-family: "Ubuntu Kurdish";
+	font-size: 40px;
+	padding-top: 30px;
+	color: #383838;
+
+}
+
+.item .name-desc p{
+	margin-top: -105px;
+	font-size: 16px;
+	text-align: right;
+	color:#efefef;
+	font-family: "Ubuntu Kurdish";
+}
+.load-more{
+	width: 120px;
+    height: 40px;
+    border: none;
+    background: #efefef;
+    color: #383838;
+    font-family: "Ubuntu Kurdfish";
+    cursor: pointer;
+    outline: none;
+    direction: rtl;
+    border-radius: 3px !important;
+}
+.load-more:hover{
+	background: #383838;
+    color: white;
+}
+
+footer{
+	background: #ecf0f1;
+	border-top: 5px solid #efefef;
+}
+footer .col-lg-12 {
+	text-align: center;
+
+}
+footer  img{
+	width: 100px;
+    margin: 10px;
+    margin-top: 40px;
+}
+.modal-dialog {
+  padding-top: 15%;
+}
+.modal-header , .modal-footer{
+    color: white;
+    background: #39414a;
+}
+.modal-title{
+    font-family: "Ubuntu Kurdish";
+}
+.modal-dialog {
+ 
+}
+.modal-body {
+    direction: rtl;
+}
+
+.modal-content {    
+    
+}
+.swal2-content{
+    font-family: "Ubuntu Kurdish";
+}
+.swal2-confirm , .swal2-title{
+    font-family: "Ubuntu Kurdish";
+}
+
+#suggested-name,#suggested-desc{
+    font-family: "Ubuntu Kurdish";
+    text-align: right;
+}
+
+#not-found{
+    font-family: "Ubuntu Kurdish";
+    /*padding-top:120px;*/
+    color: white;
+    text-align: center;
+}
+
+.card{
+    direction: rtl;
+    margin: 10px;
+    border-radius: 2px;
+    border: none;
+    /*widows: 300px;*/
+    margin: 0 auto;
+    /*min-width: 300px;*/
+    min-height: 230px;
+    margin-bottom: 30px;
+}
+
+.card:hover{
+    background: #383838;
+}
+.card:hover .card-title{
+    color: white;
+}
+.card-title{
+    font-family: "Ubuntu Kurdish";
+    font-size: 40px;
+    color: #383838;
+    text-align: center;
+}
+.card-text{
+    font-size: 16px;
+    text-align: right;
+    color:#383838;
+    font-family: "Ubuntu Kurdish";
+}
+.card-footer{
+    background: transparent;
+    border-top: 1px solid #383838;
+    color: #fccec0;
+    font-family: "Ubuntu Kurdish";
+}

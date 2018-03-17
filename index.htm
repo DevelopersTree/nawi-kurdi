@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ماڵپەری ناوی کوردی</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="img/logo_stroke.png">
+	<meta name="description" content="ماڵپەرێک بۆ دۆزینەوەی ناو و زانینی ماناکانیان">
+    <meta name="keywords" content="ناو,ناوی کوردی, ناوەکان,ناوی منداڵ,منداڵ،ئەرشیفی ناو,ئەرشیف,کورد">
+    <meta name="author" content="درەختی گەشەپێدەران">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <link href="http://services.webchin.org/web-fonts/web-font?font=UbuntuKurdish0-81met" rel="stylesheet" type="text/css"> -->
+	<!-- Ubuntu Kurdish -->
+
+	<!-- <link href="http://services.webchin.org/web-fonts/web-font?font=UniQAIDAR_Aramco" rel="stylesheet" type="text/css"> -->
+	<!-- UniQAIDAR_Aramco -->
+
+	<!-- <link href="http://services.webchin.org/web-fonts/web-font?font=UniQAIDAR_DARA" rel="stylesheet" type="text/css"> -->
+	<!-- UniQAIDAR_DARA -->
+
+	<script type="text/javascript" src="vendors/jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link rel="stylesheet" type="text/css" href="vendors/swal/dist/sweetalert2.min.css">
+
+	<!-- <script type="text/javascript" src="vendors/swal/dist/sweetalert2.common.js"></script> -->
+	<script type="text/javascript" src="vendors/swal/dist/sweetalert2.min.js"></script>
+
+
+	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77029418-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-77029418-2');
+  </script>
+
+</head>
+<body>
+
+<div id="loader" style="
+    width: 100%;
+    /*background: #37474f;*/
+    height: 100%;
+    position: fixed;
+    z-index: 100000;
+    text-align: center;
+    opacity: 0.8;
+    display: none;
+">
+<i class="fa fa-spinner fa-spin" style="
+    font-size: 80px;
+    margin-top: 23%;
+    color: white;
+"></i>
+<!-- <img src="uploads/loadingGigant.gif" style="margin-top: 23%;"> -->
+
+</div>
+<!-- Header Section -->
+<nav class="navbar  navbar-right navbar-toggleable-md  ">
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fa fa-bars"></span>
+  </button>
+  <a class="navbar-brand" href="http://www.developerstree.com" target="_blank"><img class="devtree-logo" src="img/logo.png">
+  <img class="gigant-logo" src="img/gigant_logo_landscape_low_res.png"></a>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active  ">
+        <a class="nav-link aboutus" href="#"  >دەربارە </a>
+      </li>
+      <li class="nav-item active  addname"  >
+        <a class="nav-link" href="#">زیادبکە <i class="fa fa-plus"></i></a>
+      </li>
+      <li class="nav-item active  ">
+        <a class="nav-link" href="index.htm"> ماڵەوە <i class="fa fa-home"></i></a>
+      </li>
+    </ul> 
+  </div>
+
+</nav>
+<!-- /Header -->
+<!-- Hero Area -->
+<div class="container-fluid heroArea">
+
+	<div class="row info-area">
+		<h1 class="col-lg-12">زیاتر لە <span id="namecount">----</span> ناو ھەیە
+			<h3>دۆزینەوەی ناوەکان و ماناکانیان ئاسانتر بووە</h3>
+		</h1>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 search-area">
+			<input type="text" name="search-query" placeholder="ناوێک بنووسە بۆ گەران..." id="search-box">
+			<button id="search-btn"><i class="fa fa-search"></i></button>
+		</div>
+	</div>
+
+</div>
+<div class="container-fluid bodyArea">
+	
+</div>
+<!-- /Hero -->
+
+
+<!-- Modal Area -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">وردەکاریەکان</h4>
+        </div>
+        <div class="modal-body">
+          <h1 id="modal-name">ئارام</h1>
+          <hr>
+          <p id="modal-desc">بەواتای کەسێکی لەسەرخۆ و ھێمن دێت</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" style="background:#fcc9b9;color:white;cursor: pointer;" class="btn btn-defualt" data-dismiss="modal"><i class="fa fa-times"></i></button>
+        </div>
+      </div>
+      
+    </div>
+</div>
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">دەربارەی ئێمە</h4>
+        </div>
+        <div class="modal-body">
+          <h1>ماڵپەری ناوی کوردی</h1>
+          <hr>
+          <p> ماڵپەری ناوەکان بە یەکەم پرۆژەی درەختی گەشەپێدەران دادەنرێت کە وەک سەرچاوەیەک و ئەرشیفێک کاردەکات بۆ ناوەکانی زمانی کوردی و ماناکانیان 
+         	بە سپۆنسەری کۆمپانیای گیگانت تەکنەلۆجی ئەم کارە دروست کراوە.
+         	<i><br>تێبینی: سوپاسی ھەموو لایەک و سەرچاوەیەکی کوردی دەکەین کە بەشداربوونە لە کۆکردنەوەی ناوەکان ھەروەھا 
+         	سوپاسی ئەوانەش دەکەین کە کارێکیان بەشداربوونە لە دەولەمەند کردنی زمانی کوردی و ئێمە سوودمان لێیان وەرگرتووە و زانیاریەکانمان وەرگرتوە لێیان.</i>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" style="background:#fcc9b9;color:white;cursor: pointer;" class="btn btn-defualt" data-dismiss="modal"><i class="fa fa-times"></i></button>
+        </div>
+      </div>
+      
+    </div>
+</div>
+<div class="row" style="background:#ececec;direction: rtl;padding: 10px ;margin-right:0px;">
+
+	<div class="col-lg-12" style="text-align: center;">
+		<button class="load-more btn" ><i class=" fa fa-caret-down"></i> زیاتر </button>
+	</div>
+
+</div>
+
+<!-- /Modal -->
+<!-- Footer -->
+<footer>
+	<div class="row" style="margin-right: 0px;">
+		<div class="col-lg-2">  </div>
+		<div class="col-lg-8" style="text-align: center;"><img src="img/logo_stroke.png" ></div>
+		<div class="col-lg-2"> </div>
+	</div>
+</footer>
+<!-- / Footer -->
+<!-- Hidden Values -->
+<input type="hidden" id="startingIndex" value="0">
+<input type="hidden" id="gender" value="-1">
+<input type="hidden" id="startWith" value="-1">
+
+<input type="hidden" id="searched" value="-1">
+
+
+
+</body>
+</html>

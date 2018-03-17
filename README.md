@@ -1,0 +1,1 @@
+# Nawi-kurdi
